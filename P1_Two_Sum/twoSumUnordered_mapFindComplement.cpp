@@ -5,8 +5,9 @@ using namespace std;
 
 
 /*
- * Description: This is Brute Force approach loop each element x and try to
- * find a y that makes  x + y equals target using unordered_map
+ *
+ * Description: store all elements and position in hashmap; 
+ * loop each element x and try to find  (target - x) in hash map
  *
  */
 vector<int> twoSum(vector<int>& nums, int target)
@@ -25,6 +26,6 @@ vector<int> twoSum(vector<int>& nums, int target)
             result.push_back(y->second);
             return result;
         }
-    }        
+    }
 }
 
